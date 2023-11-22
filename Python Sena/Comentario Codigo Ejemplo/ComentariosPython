@@ -1,0 +1,251 @@
+# Aqui un diccionario llamado "calificaciones" con un solo elemento: el nombre "Sandra" y la nota final 5.0
+calificaciones = {
+'nombre': 'Sandra', 
+'notafinal': 5.0
+}
+
+# Aqui reemplazaremos el diccionario anterior con uno nuevo que contiene multiples nombres de estudiantes y sus calificaciones correspondientes
+calificaciones = {
+'Sandra': 5.0, 
+'Adriana': 5.0,
+'Mauricio': 4.5,
+'Jose': 2.5
+}
+
+# Aqui iteramos a traves de los elementos (nombre, calificacion) del diccionario "calificaciones"
+for i, j in calificaciones.items():
+    # Imprimir el nombre y la calificación de cada estudiante
+    print(i, j)
+
+
+
+
+
+
+# Imprimir las claves (nombres de estudiantes) del diccionario "calificaciones"
+print("Técnicas por clave")
+for i in calificaciones.keys():
+    print(i)
+
+# Imprimir los valores (calificaciones) del diccionario "calificaciones"
+print("Iterar por valor")
+for j in calificaciones.values():
+    print(j)
+
+# Aqui hacemos la definicion de dos listas, "nombres" y "edades"
+nombres = ['Maria', 'Sebastian', 'Ana']
+edades = ['18', '25', '30']
+
+# Aqui utilizamos la función zip para combinar elementos de las listas "nombres" y "edades" y luego imprimirlos en un formato especifico
+for n, e in zip(nombres, edades):
+    print('Tú nombre es {0} y tu edad {1}.'.format(n, e))
+
+
+
+
+
+
+# Crear un diccionario llamado "dicaleatorio" usando una comprensión de diccionario
+# La comprensión de diccionario se utiliza para generar pares clave-valor en el diccionario.
+# En este caso, se generan pares clave-valor donde la clave es un número (x) y el valor es el cuadrado de ese número (x**2).
+dicaleatorio = {x: x**2 for x in (2, 4, 6)}
+
+# Imprimir el diccionario resultante
+print(dicaleatorio)
+
+
+
+
+
+
+# Imprimir el encabezado para indicar que se mostrarán números en orden inverso
+print("Números en reversa")
+
+# Usar la función "reversed" para invertir una secuencia generada por "range"
+# El rango generado comienza en 1, termina en 9 (exclusivo), y avanza de 2 en 2, por lo que incluye los números impares del 1 al 9.
+for i in reversed(range(1, 10, 2)):
+    # Imprimir cada número en la secuencia invertida
+    print(i)
+
+
+
+
+
+
+# Intentar eliminar una entrada con la clave 'Rosa' del diccionario 'calificaciones'
+# Sin embargo, este código arrojará una excepción KeyError si 'Rosa' no existe en el diccionario.
+del(calificaciones['Rosa'])
+
+# Iterar a través de los elementos (nombre, calificación) del diccionario "calificaciones"
+for i, j in calificaciones.items():
+    # Imprimir el nombre y la calificación de cada estudiante que queda en el diccionario
+    print(i, j)
+
+
+
+
+
+
+# Definir una función llamada "saludar" que imprime la cadena "saludo"
+def saludar():
+    print("saludo")
+
+# Definir una función llamada "retornarnumero" que devuelve el valor 1
+def retornarnumero():
+    return 1
+
+# Llamar a la función "Saludar" (nota que la "S" mayúscula es diferente de la "s" minúscula en el nombre de la función)
+Saludar()  # Esto generará un error porque la función "Saludar" no está definida.
+
+# Llamar a la función "retornarnumero" y no hacer nada con el valor que devuelve
+retornarnumero()  # La función retorna 1, pero no se almacena ni imprime su valor.
+
+# Comprobar si la función "retornarnumero" retorna 1 y luego imprimir un mensaje apropiado
+if retornarnumero() == 1:
+    print("devolvió un uno")
+else:
+    print("No devolvió un uno")
+
+
+
+
+
+
+# Definir una función llamada "raiz" que toma un valor como argumento y devuelve la raíz cuadrada de ese valor.
+def raiz(value):
+    return value ** (1/2)
+
+# Llamar a la función "raiz" con el argumento 4, que calculará la raíz cuadrada de 4.
+# Luego, imprimir el resultado utilizando una f-string.
+print(f'La raiz cuadrada es: {raiz(4)}')
+
+
+
+
+
+
+# Definir una función llamada "validarsiexiste" que toma un argumento "obj".
+def validarsiexiste(obj):
+    # Comprobar si "obj" es verdadero (True) o falso (False) y luego imprimir un mensaje en consecuencia.
+    if obj:
+        print(f"{obj} is True")
+    else:
+        print(f"{obj} is False")
+
+# Llamar a la función "validarsiexiste" con el argumento 1.
+validarsiexiste(1)
+
+
+
+
+
+
+# Definir una función llamada "compra" que toma tres argumentos: marca, cantidad y valor.
+def compra(marca, cantidad, valor):
+    # Crear un diccionario que representa una compra con las claves "marca", "cantidad" y "valor".
+    # El valor del costo total se calcula como el valor unitario (valor) multiplicado por la cantidad.
+    return dict(
+        marca=marca,
+        cantidad=cantidad,
+        valor=valor * cantidad
+    )
+
+# Llamar a la función "compra" con los argumentos "AMD" (marca), 3 (cantidad) y 2,500,000 (valor).
+# Luego, imprimir el resultado de la función usando una f-string.
+print(f'Lo comprado fue: {compra("AMD", 3, 2,500,000)}')
+
+
+
+
+
+
+# Definir una función llamada "compra" que toma tres argumentos: marca, cantidad y valor.
+def compra(marca, cantidad, valor):
+    # Crear un diccionario que representa una compra con las claves "marca", "cantidad" y "valor".
+    # El valor del costo total se calcula como el valor unitario (valor) multiplicado por la cantidad.
+    return dict(
+        marca=marca,
+        cantidad=cantidad,
+        valor=valor * cantidad
+    )
+
+# Llamar a la función "compra" con los argumentos utilizando palabras clave (keyword arguments).
+# Corregir el uso de comillas dobles en la marca y el valor.
+print(f'Lo comprado fue: {compra(marca="AMD", cantidad=3, valor=2500000)}')
+
+
+
+
+
+
+# Definir una función llamada "compra" que toma tres argumentos: marca, cantidad y valor (con un valor predeterminado de 2,500,000).
+def compra(marca, cantidad, valor=2500000):
+    # Crear un diccionario que representa una compra con las claves "marca", "cantidad" y "valor".
+    # El valor del costo total se calcula como el valor unitario (valor) multiplicado por la cantidad.
+    return dict(
+        marca=marca,
+        cantidad=cantidad,
+        valor=valor * cantidad
+    )
+
+# Llamar a la función "compra" con los argumentos "AMD" (marca) y 3 (cantidad).
+# Dado que no se proporciona un valor para "valor", se utiliza el valor predeterminado de 2,500,000.
+print(f'Lo comprado fue: {compra("AMD", 3)}')
+
+
+
+
+
+
+# Definir una función llamada "lista" que toma dos argumentos: "arg" y "result" (con un valor predeterminado de una lista vacía []).
+def lista(arg, result=[]):
+    # Agregar el valor de "arg" a la lista "result".
+    result.append(arg)
+    # Imprimir la lista resultante.
+    print(result)
+
+# Llamar a la función "lista" con el argumento 'domingo' y una lista vacía como "result".
+lista('domingo', [])
+
+
+
+
+
+
+# Definir una función llamada "listalimpia" que toma dos argumentos: "arg" y "result" (con un valor predeterminado de None).
+def listalimpia(arg, result=None):
+    # Verificar si "result" es None (ninguna lista proporcionada).
+    if result is None:
+        # Crear una nueva lista y agregar el valor de "arg" a esta lista.
+        result = []
+    result.append(arg)
+    # Imprimir la lista resultante.
+    print(result)
+
+# Llamar a la función "listalimpia" con el argumento "a".
+# En este caso, "result" es None, por lo que se crea una nueva lista y se agrega "a" a ella.
+listalimpia("a")
+
+# Llamar a la función "listalimpia" con el argumento "b".
+# Nuevamente, "result" es None, por lo que se crea una nueva lista y se agrega "b" a ella.
+listalimpia("b")
+
+
+
+
+
+
+# Definir la función "operadorand" como una función lambda antes de usarla.
+operadorand = lambda x, y: x & y
+
+# Iterar a través de dos bucles anidados utilizando i y j como variables.
+for i in range(2):
+    for j in range(2):
+        # Utilizar la función "operadorand" para calcular la operación AND entre i y j.
+        print(f"{i} & {j} = {operadorand(i, j)}")
+
+
+
+
+
+

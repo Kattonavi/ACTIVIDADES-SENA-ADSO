@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com%22%3E/
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <title>Contador JavaScript</title>
+
+</head>
+<body>
+    <h1> Trabajo Con JavaScript</h1>
+<div class="contenedor"> 
+    <script src="js/script.js"></script>
+</div>
+<div class="caja">
+<input type="number" id="n1" class="form-control"
+placeholder="numero 1"/> <br>
+<input type="number" id="n2" class="form-control"
+placeholder="numero 2"/> <br>
+<select class="from-select" aria-label="Default selelct example" id="opc">
+<option selected>opcion</option>
+<option value="1">Sumar</option>
+<option value="2">Restar</option>
+<option value="3">Multiplicar</option>
+<option value="4">Dividir</option>
+<option value="5">potencia del primer numero</option>
+</select>
+<br>
+<button onclick="mostrar()" class="btn btn-outline-dark">Calculadora</button>
+<!--mostrar el resultado del total de las funciones-->
+<div calss="alert alert-warning alert-dismissible fade show" role="alert" id="respuesta">
+<strong id="resultado"></strong>
+<button type="button" class="bth-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+</div>
+
+</body>
+
+</html>

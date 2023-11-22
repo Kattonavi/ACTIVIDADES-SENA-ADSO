@@ -1,0 +1,95 @@
+/* Estilo para el cuerpo de la página */
+body {
+    background-color: #1e1e1e; /* Color de fondo oscuro */
+    color: #fff; /* Color del texto */
+    font-family: 'Arial', sans-serif; /* Tipo de letra */
+    margin: 0; /* Elimina los márgenes predeterminados del cuerpo */
+    padding: 0; /* Elimina el relleno predeterminado del cuerpo */
+}
+
+/* Estilo para el contenedor principal */
+.container {
+    background-color: #333; /* Color de fondo del contenedor */
+    padding: 20px; /* Espaciado interno del contenedor */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Sombra del contenedor */
+    margin: 50px auto; /* Centra el contenedor y agrega márgenes superiores e inferiores */
+    max-width: 600px; /* Establece el ancho máximo del contenedor */
+}
+
+/* Estilo para los encabezados h1 */
+h1 {
+    color: #fff; /* Color del texto */
+}
+
+/* Estilo para la clase libro */
+.libro {
+    margin-bottom: 20px; /* Márgenes inferiores para separar libros */
+    display: flex; /* Utiliza flexbox para organizar elementos en columna */
+    flex-direction: column; /* Organiza los elementos en columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+    border: 1px solid #555; /* Borde del libro */
+    padding: 10px; /* Espaciado interno del libro */
+    border-radius: 8px; /* Bordes redondeados del libro */
+}
+
+/* Estilo para las imágenes dentro de la clase libro */
+.libro img {
+    width: 150px; /* Ancho fijo de la imagen */
+    border-radius: 8px; /* Bordes redondeados de la imagen */
+    margin-bottom: 10px; /* Márgenes inferiores para separar la imagen del texto */
+}
+
+/* Estilo para los encabezados h2 dentro de la clase libro */
+.libro h2 {
+    font-size: 1.5em; /* Tamaño de fuente más grande */
+    margin: 5px 0; /* Márgenes superior e inferior */
+    color: #fff; /* Color del texto */
+}
+
+/* Estilo para los párrafos dentro de la clase libro */
+.libro p {
+    font-size: 1em; /* Tamaño de fuente normal */
+    margin: 5px 0; /* Márgenes superior e inferior */
+    color: #ddd; /* Color del texto más claro */
+}
+
+/* Estilo para los botones */
+button {
+    font-size: 1em; /* Tamaño de fuente normal */
+    margin: 5px; /* Márgenes alrededor del botón */
+    padding: 5px 10px; /* Espaciado interno del botón */
+    cursor: pointer; /* Cursor al pasar sobre el botón */
+    background-color: #007bff; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s ease; /* Transición suave al pasar el ratón */
+}
+
+/* Cambio de color al pasar el ratón sobre el botón */
+button:hover {
+    background-color: #0056b3; /* Nuevo color de fondo al pasar el ratón */
+}
+
+/* Estilo para la tabla de libros */
+#tablaLibros {
+    width: 100%; /* Ancho total de la tabla */
+    margin-top: 20px; /* Márgenes superiores para separar de los elementos anteriores */
+    border-collapse: collapse; /* Colapsa los bordes de las celdas */
+}
+
+/* Estilo para las celdas y encabezados de la tabla de libros */
+#tablaLibros th, #tablaLibros td {
+    border: 1px solid #555; /* Bordes de celdas */
+    padding: 8px; /* Espaciado interno de celdas */
+    text-align: center; /* Alineación del texto al centro */
+    color: #ddd; /* Color del texto más claro */
+}
+
+/* Estilo para el valor total */
+#valorTotal {
+    margin-top: 20px; /* Márgenes superiores para separar del elemento anterior */
+    font-size: 1.2em; /* Tamaño de fuente más grande */
+    color: #fff; /* Color del texto */
+}

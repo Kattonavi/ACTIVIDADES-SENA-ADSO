@@ -1,0 +1,151 @@
+/* Estilo para ocultar el elemento con id "pedido" */
+#pedido {
+    display: none;
+}
+
+/* Estilo general para el cuerpo de la página */
+body {
+    font-family: 'Arial', sans-serif;  /* Fuente de texto */
+    background-color: #f8f8f8;  /* Color de fondo */
+    margin: 0;  /* Elimina el margen predeterminado */
+    padding: 0;  /* Elimina el relleno predeterminado */
+}
+
+/* Estilo para el contenedor principal de la página */
+.container {
+    max-width: 600px;  /* Ancho máximo del contenedor */
+    margin: 0 auto;  /* Centra el contenedor en la página */
+    background-color: #ffffff;  /* Color de fondo del contenedor */
+    padding: 20px;  /* Relleno interno del contenedor */
+    border: 1px solid #e6e6e6;  /* Borde del contenedor */
+    border-radius: 10px;  /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Sombra del contenedor */
+    margin-top: 10px;  /* Ajusta el margen superior para que el borde superior sea más visible */
+}
+
+/* Estilo para el encabezado principal */
+h1 {
+    text-align: center;  /* Centra el texto */
+    color: #333;  /* Color del texto */
+    font-size: 24px;  /* Tamaño de fuente */
+    margin-bottom: 20px;  /* Margen inferior */
+}
+
+/* Estilo para la sección del menú */
+.menu-seccion {
+    margin-bottom: 20px;  /* Margen inferior */
+}
+
+/* Establece un borde gris claro al contenedor */
+.container {
+    border: 1px solid #ccc;
+
+}
+
+/* Estilo para elementos de selección y cantidad */
+.select-menu, .input-quantity {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Estilo para el botón de cálculo */
+.calcular-boton {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #2c4153;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Cambio de estilo al pasar el mouse sobre el botón */
+.calcular-boton:hover {
+    background-color: #58698d;
+}
+
+/* Estilo para la tabla de pedidos */
+.orden-tabla {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ccc;  /* Establece un borde gris claro a la tabla */
+}
+
+/* Estilo para las celdas del encabezado de la tabla */
+.orden-tabla th {
+    background-color: #2c4153;
+    color: #fff;
+    font-weight: bold;
+    text-align: left;
+    padding: 10px;
+}
+
+/* Estilo para las celdas de datos de la tabla */
+.orden-tabla td {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+/* Estilo para el total del monto */
+.total-precio {
+    text-align: right;  /* Alinea el texto a la derecha */
+    font-size: 20px;  /* Tamaño de fuente */
+    font-weight: bold;
+    margin-top: 20px;  /* Margen superior */
+    color: #333;  /* Color del texto */
+}
+
+/* Estilo adicional para los elementos de selección y cantidad */
+.select-menu, .input-quantity {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Establece un ancho fijo para los menús desplegables de cantidad */
+.input-quantity {
+    width: 96%; /* Puedes ajustar el ancho según tus preferencias */
+}
+
+body {
+    background-color: #1b253f; /* Color de fondo azul mas oscuro */
+}
+
+
+
+
+
+
+
+
+/* color-scheme: dark;
+  --bs-disabled-color: #576175;
+  --bs-primary: #86aaf9;
+  --bs-primary-rgb: 134, 170, 249;
+  --bs-primary-bg: #3e4f74;
+  --bs-primary-color: #cfddfc;
+  --bs-danger: #ff667f;
+  --bs-danger-rgb: 255, 102, 127;
+  --bs-danger-bg: #4d3337;
+  --bs-danger-color: #ffccd4;
+  --bs-warning: #f5993d;
+  --bs-warning-rgb: 245, 153, 61;
+  --bs-warning-bg: #43403d;
+  --bs-warning-color: #facc9e;
+  --bs-success: #00e5b9;
+  --bs-success-rgb: 0, 229, 185;
+  --bs-success-bg: #21453e;
+  --bs-success-color: #4cffdd;
+  --bs-info-bg: #66b8ff;
+  --bs-info-rgb: 102, 184, 255;
+  --bs-info-bg: #2c4153;
+  --bs-info-color: #cce7ff;
+  --bs-input-border-color: #58698d;
+
+  */

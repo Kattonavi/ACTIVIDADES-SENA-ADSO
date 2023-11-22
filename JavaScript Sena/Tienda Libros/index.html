@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Libros</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Tienda de Libros</h1>
+
+    <!-- Sección del Libro de Java -->
+    <div class="libro" id="javaLibro">
+        <img src="img/JavaBook.jpg" alt="Libro de Java">
+        <h2>Libro de Java</h2>
+        <p>Cantidad: <span id="javaCantidad">0</span></p>
+        <button onclick="aumentarCantidad('java')">Aumentar</button>
+        <button onclick="disminuirCantidad('java')">Disminuir</button>
+    </div>
+
+    <!-- Sección del Libro de C# -->
+    <div class="libro" id="csharpLibro">
+        <img src="img/CBook.jpg" alt="Libro de C#">
+        <h2>Libro de C#</h2>
+        <p>Cantidad: <span id="csharpCantidad">0</span></p>
+        <button onclick="aumentarCantidad('csharp')">Aumentar</button>
+        <button onclick="disminuirCantidad('csharp')">Disminuir</button>
+    </div>
+
+    <h2>Resumen de la Compra</h2>
+
+    <!-- Tabla para mostrar la compra -->
+    <table id="tablaLibros">
+        <thead>
+            <tr>
+                <th>Cantidad</th>
+                <th>Nombre del Libro</th>
+                <th>Precio Unitario</th>
+                <th>Precio Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Aquí se llenará la tabla dinámicamente con JavaScript -->
+        </tbody>
+    </table>
+
+    <!-- Muestra el valor total de la compra -->
+    <div id="valorTotal">
+        <p>Valor Total: $<span id="total">0</span></p>
+    </div>
+</div>
+
+<!-- Enlace al archivo JavaScript -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
