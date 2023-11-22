@@ -1,72 +1,86 @@
-div#respuesta{
+/* Oculta el div con id 'respuesta' al principio */
+div#respuesta {
     display: none;
-    }
-    .caja{
-        width: 280px;
-        height: 80px;
-        position: sticky;
-        top: 30px; left: 400px;
-    }
-    body {
-        font-family: 'Josefin Sans', sans-serif;
-        background-color: #f0f0f0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        margin: 0;
-    }
+}
 
-    h1 {
-        font-family: 'Permanent Marker', cursive;
-        font-size: 3rem;
-        color: #333;
-        text-align: center;
-    }
+/* Estilo para la caja principal */
+.caja {
+    width: 280px;
+    height: 80px;
+    position: sticky;
+    top: 30px;
+    left: 400px;
+}
 
-    .contenedor {
-        background-color: #fff;
-        padding: 2rem;
-        border-radius: 10px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
+/* Estilo general del cuerpo de la página */
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
 
-    .caja {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+/* Estilo para el título h1 */
+h1 {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 3rem;
+    color: #333;
+    text-align: center;
+}
 
-    .form-control {
-        width: 100%;
-        padding: 0.5rem;
-        margin: 0.5rem 0;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        font-size: 1rem;
-    }
+/* Estilo para el contenedor principal */
+.contenedor {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
 
-    .btn {
-        background-color: #333;
-        color: #fff;
-        padding: 0.5rem 1rem;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        font-size: 1rem;
-        margin-top: 1rem;
-    }
+/* Estilo para la caja interior */
+.caja {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-    .btn:hover {
-        background-color: #555;
-    }
+/* Estilo para los campos de entrada */
+.form-control {
+    width: 100%;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
 
-    .alert {
-        width: 100%;
-        margin-top: 1rem;
-        text-align: center;
-    }
+/* Estilo para los botones */
+.btn {
+    background-color: #333;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
 
-    #resultado {
-        font-size: 2rem;
-    }
+/* Efecto de cambio de color al pasar el ratón sobre los botones */
+.btn:hover {
+    background-color: #555;
+}
+
+/* Estilo para las alertas */
+.alert {
+    width: 100%;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+/* Estilo para el resultado */
+#resultado {
+    font-size: 2rem;
+}
